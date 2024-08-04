@@ -203,14 +203,7 @@ const UsernameResults = () => {
         </div>
 
         {/* Fixed Buttons */}
-        <div className="fixed-buttons">
-          <button className="btn-graph">
-            <img src={graphButtonImg} alt="Graph" />
-          </button>
-          <button className="btn-download">
-            <img src={downloadButtonImg} alt="Download" />
-          </button>
-        </div>
+        
       </div>
     </div>
   );
