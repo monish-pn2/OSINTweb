@@ -1,29 +1,35 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate from react-router-dom
+import { Link, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const LandingPage = () => {
-  const navigate = useNavigate(); // Hook for programmatic navigation
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const searchType = document.getElementById('searchType').value;
     const searchValue = document.getElementById('search').value;
     
-    // Depending on searchType, navigate to corresponding results page
     switch (searchType) {
       case 'aadhar':
       case 'pan':
-        navigate(`/aadhar_results`); // Navigate to Aadhar or PAN results
+        navigate('/aadhar_results');
         break;
       case 'vehicle':
-        navigate('/vehicle_results'); // Navigate to Vehicle results
+        navigate('/vehicle_results');
         break;
-        case 'email':
-          navigate('/vehicle_results'); // Navigate to Email results
-          break;
+      case 'email':
+        navigate('/email_results');
+        break;
+      case 'username':
+        const [firstName, lastName] = searchValue.split(' ');
+        if (firstName && lastName) {
+          navigate(`/username_results?firstname=${firstName}&lastname=${lastName}`);
+        } else {
+          alert('Please enter both first name and last name');
+        }
+        break;
       default:
-        // Handle other cases or show error
         console.error('Invalid search type');
         break;
     }
@@ -65,7 +71,7 @@ const LandingPage = () => {
             margin: 0;
             background-color: #343a40;
             color: white;
-            height: 80px; /* Increased height */
+            height: 80px;
           }
           .sidebar-brand {
             margin-bottom: 4rem;
@@ -78,12 +84,11 @@ const LandingPage = () => {
             margin-left: 280px;
           }
           .navbar-nav .nav-item .nav-link {
-            line-height: 45px; /* Adjust line height to vertically center links */
+            line-height: 45px;
           }
         `}
       </style>
       
-      {/* Sidebar */}
       <nav className="sidebar">
         <div>
           <div className="sidebar-brand">
@@ -126,11 +131,9 @@ const LandingPage = () => {
             />
             <strong>mdo</strong>
           </Link>
-          
         </div>
       </nav>
 
-      {/* Main Content */}
       <div className="nav-bar">
         <nav className="navbar sticky-header navbar-expand-lg navbar-dark bg-dark mb-4">
           <div className="container-fluid">
@@ -178,7 +181,6 @@ const LandingPage = () => {
         </nav>
       </div>
 
-      {/* Main Layout */}
       <div className="main-layout">
         <form className="form-section" id="searchForm" onSubmit={handleSubmit}>
           <div className="mb-3">
@@ -198,6 +200,7 @@ const LandingPage = () => {
               <option value="email">Email</option>
               <option value="phone">Phone Number</option>
               <option value="ip">IP Address</option>
+              <option value="username">Username</option>
             </select>
           </div>
           <div className="mb-3">
