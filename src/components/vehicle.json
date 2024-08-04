@@ -1,0 +1,76 @@
+{
+    "code": 200,
+    "result": {
+        "regNo": "KA41R8631",
+        "class": "M-Cycle/Scooter(2WN)",
+        "chassis": "MBLHA10EYBHA04541",
+        "engine": "HA10EFBHA62193",
+        "vehicleManufacturerName": "HERO MOTOCORP LTD",
+        "model": "SPLENDOR PLUS SPOKES",
+        "vehicleColour": "P BLACK",
+        "type": "PETROL",
+        "normsType": "BHARAT STAGE III",
+        "bodyType": "SOLO",
+        "ownerCount": "1",
+        "owner": "SHIVARAJ P A",
+        "ownerFatherName": "ANAND",
+        "mobileNumber": "",
+        "status": "ACTIVE",
+        "statusAsOn": "20/06/2024",
+        "regAuthority": "JNANABHARATHI  RTO, Karnataka",
+        "regDate": "27-Jan-2011",
+        "vehicleManufacturingMonthYear": "1/2011",
+        "rcExpiryDate": "",
+        "vehicleTaxUpto": "26-Jan-2026",
+        "vehicleInsuranceCompanyName": "SBI General",
+        "vehicleInsuranceUpto": "17-Feb-2025",
+        "vehicleInsurancePolicyNumber": "HERO/1799459",
+        "rcFinancer": "",
+        "splitPresentAddress": {
+            "district": [
+                "JNANABHARATHI  RTO"
+            ],
+            "state": [
+                [
+                    "Karnataka",
+                    "KA"
+                ]
+            ],
+            "pincode": "560026",
+            "country": [
+                "IN",
+                "IND",
+                "INDIA"
+            ]
+        },
+        "vehicleCubicCapacity": "97",
+        "grossVehicleWeight": "109",
+        "unladenWeight": "109",
+        "vehicleCategory": "2WN",
+        "rcStandardCap": "0",
+        "vehicleCylindersNo": "1",
+        "vehicleSeatCapacity": "2",
+        "vehicleSleeperCapacity": "0",
+        "vehicleStandingCapacity": "0",
+        "wheelbase": "1230",
+        "vehicleNumber": "KA41R8631",
+        "puccNumber": "",
+        "puccUpto": "",
+        "blacklistStatus": "",
+        "blacklistDetails": [],
+        "challanDetails": [],
+        "permitIssueDate": "",
+        "permitNumber": "",
+        "permitType": "",
+        "permitValidFrom": "",
+        "permitValidUpto": "",
+        "nonUseStatus": "",
+        "nonUseFrom": "",
+        "nonUseTo": "",
+        "nationalPermitNumber": "",
+        "nationalPermitUpto": "",
+        "nationalPermitIssuedBy": "",
+        "isCommercial": false,
+        "nocDetails": ""
+    }
+}

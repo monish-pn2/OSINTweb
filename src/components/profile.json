@@ -1,0 +1,14 @@
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "123-456-7890",
+    "address": "123 Main St, Anytown, USA",
+    "jobTitle": "Software Developer",
+    "company": "Tech Solutions",
+    "experience": 5,
+    "skills": ["JavaScript", "React", "Node.js"],
+    "degree": "Bachelor of Science in Computer Science",
+    "university": "University of Somewhere",
+    "graduationYear": 2018
+  }
+  

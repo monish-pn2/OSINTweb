@@ -1,0 +1,644 @@
+{
+    "name": "akash80@gmail.com",
+    "query": "akash80@gmail.com",
+    "status": "completed",
+    "date": "2024-06-29 11:47:14",
+    "json_data": {
+        "status": "success",
+        "data": {
+            "email_address": "akash80@gmail.com",
+            "domain": "gmail.com",
+            "valid_syntax": true,
+            "disposable": false,
+            "webmail": true,
+            "deliverable": true,
+            "catch_all": false,
+            "gibberish": false,
+            "spam": false
+        }
+    },
+    "social_media": {
+        "success": true,
+        "error": {},
+        "data": {
+            "email": "akash80@gmail.com",
+            "score": 0.0,
+            "deliverable": true,
+            "domain_details": {
+                "domain": "gmail.com",
+                "tld": ".com",
+                "registered": true,
+                "created": "1995-08-13 04:00:00",
+                "updated": "2023-07-11 10:10:13",
+                "expires": "2024-08-12 04:00:00",
+                "registrar_name": "MarkMonitor Inc.",
+                "registered_to": "Google LLC",
+                "disposable": false,
+                "free": true,
+                "custom": false,
+                "dmarc_enforced": true,
+                "spf_strict": true,
+                "valid_mx": true,
+                "accept_all": false,
+                "suspicious_tld": false,
+                "website_exists": true
+            },
+            "account_details": {
+                "apple": {
+                    "registered": true
+                },
+                "ebay": {
+                    "registered": null
+                },
+                "facebook": {
+                    "registered": true,
+                    "url": null,
+                    "name": null,
+                    "photo": null
+                },
+                "flickr": {
+                    "registered": false,
+                    "username": null,
+                    "photo": null,
+                    "followers": null,
+                    "location": null,
+                    "occupation": null,
+                    "description": null
+                },
+                "foursquare": {
+                    "registered": null,
+                    "bio": null,
+                    "photo": null,
+                    "profile_url": null
+                },
+                "github": {
+                    "registered": false,
+                    "photo": null,
+                    "full_name": null,
+                    "username": null,
+                    "location": null,
+                    "company": null,
+                    "website": null,
+                    "bio": null,
+                    "followers": null,
+                    "following": null,
+                    "twitter": null,
+                    "profile_url": null
+                },
+                "google": {
+                    "registered": true,
+                    "photo": null,
+                    "activity": {
+                        "reviews": null,
+                        "ratings": null,
+                        "photos": null,
+                        "videos": null,
+                        "answers": null,
+                        "edits": null,
+                        "places_added": null,
+                        "roads_added": null,
+                        "facts_checked": null,
+                        "published_lists": null,
+                        "q_and_a": null
+                    },
+                    "is_enterprise_user": null,
+                    "last_updated": null
+                },
+                "gravatar": {
+                    "registered": false,
+                    "location": null,
+                    "name": null,
+                    "profile_url": null,
+                    "username": null
+                },
+                "instagram": {
+                    "registered": false
+                },
+                "lastfm": {
+                    "registered": null
+                },
+                "linkedin": {
+                    "registered": null,
+                    "url": null,
+                    "name": null,
+                    "company": null,
+                    "title": null,
+                    "location": null,
+                    "website": null,
+                    "twitter": null,
+                    "photo": null,
+                    "connection_count": null
+                },
+                "microsoft": {
+                    "registered": true
+                },
+                "myspace": {
+                    "registered": false
+                },
+                "pinterest": {
+                    "registered": true
+                },
+                "skype": {
+                    "registered": null,
+                    "country": null,
+                    "country_code": null,
+                    "city": null,
+                    "gender": null,
+                    "name": null,
+                    "id": null,
+                    "handle": null,
+                    "bio": null,
+                    "age": null,
+                    "language": null,
+                    "state": null,
+                    "photo": null,
+                    "contact_type": null
+                },
+                "spotify": {
+                    "registered": true
+                },
+                "tumblr": {
+                    "registered": false
+                },
+                "twitter": {
+                    "registered": true
+                },
+                "vimeo": {
+                    "registered": null
+                },
+                "weibo": {
+                    "registered": false
+                },
+                "yahoo": {
+                    "registered": false
+                },
+                "discord": {
+                    "registered": true
+                },
+                "ok": {
+                    "registered": false,
+                    "city": null,
+                    "age": null,
+                    "date_joined": null,
+                    "full_name": null
+                },
+                "kakao": {
+                    "registered": null
+                },
+                "booking": {
+                    "registered": false
+                },
+                "airbnb": {
+                    "registered": null,
+                    "about": null,
+                    "created_at": null,
+                    "first_name": null,
+                    "identity_verified": null,
+                    "location": null,
+                    "image": null,
+                    "reviewee_count": null,
+                    "trips": null,
+                    "work": null
+                },
+                "amazon": {
+                    "registered": true
+                },
+                "qzone": {
+                    "registered": false
+                },
+                "adobe": {
+                    "registered": true
+                },
+                "mailru": {
+                    "registered": false
+                },
+                "wordpress": {
+                    "registered": false
+                },
+                "imgur": {
+                    "registered": false
+                },
+                "disneyplus": {
+                    "registered": true
+                },
+                "netflix": {
+                    "registered": true
+                },
+                "jdid": {
+                    "registered": null
+                },
+                "flipkart": {
+                    "registered": null
+                },
+                "bukalapak": {
+                    "registered": false
+                },
+                "archiveorg": {
+                    "registered": false
+                },
+                "lazada": {
+                    "registered": false
+                },
+                "zoho": {
+                    "registered": false
+                },
+                "samsung": {
+                    "registered": true
+                },
+                "evernote": {
+                    "registered": null
+                },
+                "envato": {
+                    "registered": false
+                },
+                "patreon": {
+                    "registered": false
+                },
+                "tokopedia": {
+                    "registered": false
+                },
+                "rambler": {
+                    "registered": false
+                },
+                "quora": {
+                    "registered": true
+                },
+                "atlassian": {
+                    "registered": false
+                },
+                "aboutme": {
+                    "registered": false
+                },
+                "altbalaji": {
+                    "registered": false
+                },
+                "bitmoji": {
+                    "registered": true
+                },
+                "bodybuilding": {
+                    "registered": null
+                },
+                "codecademy": {
+                    "registered": false
+                },
+                "deliveroo": {
+                    "registered": false
+                },
+                "diigo": {
+                    "registered": false
+                },
+                "duolingo": {
+                    "registered": false,
+                    "full_name": null,
+                    "photo": null,
+                    "registered_at": null,
+                    "country": null,
+                    "username": null,
+                    "has_recent_activity": null,
+                    "learning_language": null,
+                    "from_language": null,
+                    "email_verified": null,
+                    "courses": null
+                },
+                "eventbrite": {
+                    "registered": false
+                },
+                "firefox": {
+                    "registered": false
+                },
+                "freelancer": {
+                    "registered": false
+                },
+                "gaana": {
+                    "registered": true
+                },
+                "giphy": {
+                    "registered": false
+                },
+                "hubspot": {
+                    "registered": false
+                },
+                "kommo": {
+                    "registered": false
+                },
+                "komoot": {
+                    "registered": false
+                },
+                "nike": {
+                    "registered": null
+                },
+                "plurk": {
+                    "registered": false
+                },
+                "rappi": {
+                    "registered": false
+                },
+                "replit": {
+                    "registered": false
+                },
+                "seoclerks": {
+                    "registered": false
+                },
+                "snapchat": {
+                    "registered": true
+                },
+                "snapdeal": {
+                    "registered": true
+                },
+                "soundcloud": {
+                    "registered": null
+                },
+                "starz": {
+                    "registered": false
+                },
+                "strava": {
+                    "registered": false
+                },
+                "taringa": {
+                    "registered": null,
+                    "username": null,
+                    "photo": null
+                },
+                "tiki": {
+                    "registered": false
+                },
+                "treehouse": {
+                    "registered": false
+                },
+                "venmo": {
+                    "registered": false
+                },
+                "vivino": {
+                    "registered": false
+                },
+                "vkontakte": {
+                    "registered": false
+                },
+                "wattpad": {
+                    "registered": false
+                },
+                "xing": {
+                    "registered": null
+                },
+                "yandex": {
+                    "registered": false
+                },
+                "adult_sites": {
+                    "registered": true
+                }
+            },
+            "breach_details": {
+                "haveibeenpwned_listed": true,
+                "number_of_breaches": 22,
+                "first_breach": "2012-07-01",
+                "breaches": [
+                    {
+                        "name": "2,844 Separate Data Breaches",
+                        "domain": "",
+                        "date": "2018-02-19"
+                    },
+                    {
+                        "name": "Adobe",
+                        "domain": "adobe.com",
+                        "date": "2013-10-04"
+                    },
+                    {
+                        "name": "Cit0day",
+                        "domain": "cit0day.in",
+                        "date": "2020-11-04"
+                    },
+                    {
+                        "name": "Collection #1",
+                        "domain": "",
+                        "date": "2019-01-07"
+                    },
+                    {
+                        "name": "Data Enrichment Exposure From PDL Customer",
+                        "domain": "",
+                        "date": "2019-10-16"
+                    },
+                    {
+                        "name": "Domino's India",
+                        "domain": "dominos.co.in",
+                        "date": "2021-03-24"
+                    },
+                    {
+                        "name": "Dropbox",
+                        "domain": "dropbox.com",
+                        "date": "2012-07-01"
+                    },
+                    {
+                        "name": "Dubsmash",
+                        "domain": "dubsmash.com",
+                        "date": "2018-12-01"
+                    },
+                    {
+                        "name": "Exploit.In",
+                        "domain": "",
+                        "date": "2016-10-13"
+                    },
+                    {
+                        "name": "HDB Financial Services",
+                        "domain": "hdbfs.com",
+                        "date": "2023-02-22"
+                    },
+                    {
+                        "name": "Modern Business Solutions",
+                        "domain": "modbsolutions.com",
+                        "date": "2016-10-08"
+                    },
+                    {
+                        "name": "Moneycontrol",
+                        "domain": "moneycontrol.com",
+                        "date": "2017-09-07"
+                    },
+                    {
+                        "name": "MPGH",
+                        "domain": "mpgh.net",
+                        "date": "2015-10-22"
+                    },
+                    {
+                        "name": "Naz.API",
+                        "domain": "",
+                        "date": "2023-09-20"
+                    },
+                    {
+                        "name": "Paytm",
+                        "domain": "paytm.com",
+                        "date": "2020-08-30"
+                    },
+                    {
+                        "name": "River City Media Spam List",
+                        "domain": "rivercitymediaonline.com",
+                        "date": "2017-01-01"
+                    },
+                    {
+                        "name": "Straffic",
+                        "domain": "straffic.io",
+                        "date": "2020-02-14"
+                    },
+                    {
+                        "name": "Twitter (200M)",
+                        "domain": "twitter.com",
+                        "date": "2021-01-01"
+                    },
+                    {
+                        "name": "Verifications.io",
+                        "domain": "verifications.io",
+                        "date": "2019-02-25"
+                    },
+                    {
+                        "name": "Yatra",
+                        "domain": "yatra.com",
+                        "date": "2013-09-01"
+                    },
+                    {
+                        "name": "Zomato",
+                        "domain": "zomato.com",
+                        "date": "2017-05-17"
+                    },
+                    {
+                        "name": "pxahb.xyz",
+                        "domain": null,
+                        "date": null
+                    }
+                ]
+            },
+            "applied_rules": [
+                {
+                    "id": "E113",
+                    "name": "Domain is a free provider. At least 2 online profiles were found. It was involved in at least a data breach",
+                    "operation": "+",
+                    "score": 0.0
+                }
+            ]
+        }
+    },
+    "verification": {
+        "success": true,
+        "error": {},
+        "data": {
+            "valid_format": true,
+            "deliverable": true,
+            "inbox_full": false,
+            "domain_details": {
+                "domain": "gmail.com",
+                "tld": ".com",
+                "registered": true,
+                "disposable": false,
+                "free": true,
+                "custom": false,
+                "dmarc_enforced": true,
+                "spf_strict": true,
+                "valid_mx": true,
+                "accept_all": false,
+                "suspicious_tld": false,
+                "website_exists": true,
+                "created": "1995-08-13 04:00:00",
+                "updated": "2023-07-11 10:10:13"
+            }
+        }
+    },
+    "domains": {
+        "data": {
+            "status": "valid",
+            "result": "deliverable",
+            "_deprecation_notice": "Using result is deprecated, use status instead",
+            "score": 90,
+            "email": "akash80@gmail.com",
+            "regexp": true,
+            "gibberish": false,
+            "disposable": false,
+            "webmail": true,
+            "mx_records": true,
+            "smtp_server": true,
+            "smtp_check": true,
+            "accept_all": false,
+            "block": false,
+            "sources": []
+        },
+        "meta": {
+            "params": {
+                "email": "akash80@gmail.com"
+            }
+        }
+    },
+    "breaches": {
+        "success": true,
+        "found": 10,
+        "result": [
+            {
+                "email": "akash80@gmail.com",
+                "hash_password": true,
+                "password": "QFchE****",
+                "sha1": "ae7ea494898521d07d67663415c66ff86d60e9db",
+                "hash": "14whIgzPcns031YAW8FiociyI4RFGQGl",
+                "sources": "partyone.in"
+            },
+            {
+                "email": "akash80@gmail.com",
+                "hash_password": true,
+                "password": "angel**",
+                "sha1": "abae854dceb7a01ab186d14e8e024480e917af31",
+                "hash": "lhYagE5Cm1H9wbCnWSPGH/iaJ4lsLw==",
+                "sources": "Dropbox.com"
+            },
+            {
+                "email": "akash80@gmail.com",
+                "hash_password": true,
+                "password": "angel**",
+                "sha1": "abae854dceb7a01ab186d14e8e024480e917af31",
+                "hash": "lhYagE5Cm1H9wbCnWSPGH/iaJ4lsLw==",
+                "sources": "commoditiescontrol.com"
+            },
+            {
+                "email": "akash80@gmail.com",
+                "hash_password": true,
+                "password": "bharg******",
+                "sha1": "1557c44b82572fca6d9bc52683715130577a885c",
+                "hash": "FqESMXarZmBrWfrt2UTtLfucIZ5nLz3z5ME=",
+                "sources": "Dropbox.com"
+            },
+            {
+                "email": "akash80@gmail.com",
+                "hash_password": true,
+                "password": "bharg******",
+                "sha1": "1557c44b82572fca6d9bc52683715130577a885c",
+                "hash": "FqESMXarZmBrWfrt2UTtLfucIZ5nLz3z5ME=",
+                "sources": "Twitter.com"
+            },
+            {
+                "email": "akash80@gmail.com",
+                "hash_password": true,
+                "password": "dazzl*****",
+                "sha1": "82f20972fefa910ed041063f18dff44750889ba8",
+                "hash": "kY8wD5qYDtlbnE+f3zPUMP2VOpZsf3mh6A==",
+                "sources": "Unknown"
+            },
+            {
+                "email": "akash80@gmail.com",
+                "hash_password": true,
+                "password": "93935****",
+                "sha1": "32686375939410a823cae3401eb5a75513db4c15",
+                "hash": "oRniXoLdpwF5PdIF8P9Xv6DHed81fHqq",
+                "sources": "Mpgh.net"
+            },
+            {
+                "email": "akash80@gmail.com",
+                "has_password": false,
+                "sources": "Twitter.com (scraping data)"
+            },
+            {
+                "email": "akash80@gmail.com",
+                "has_password": false,
+                "sources": "Zomato.com"
+            }, 
+            {
+                "email": "akash80@gmail.com",
+                "has_password": false,
+                "sources": "Moneycontrol.com"
+            }
+        ]
+    },
+    "option": "1"
+}
