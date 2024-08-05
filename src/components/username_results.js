@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
-import graphButtonImg from "./img/graph.png";
-import downloadButtonImg from "./img/down.png";
+import jsPDF from 'jspdf';
+import graphButtonImg from './img/graph.png';
+import downloadButtonImg from './img/down.png';
 
 const UsernameResults = () => {
   const location = useLocation();
@@ -11,6 +12,72 @@ const UsernameResults = () => {
   const lastName = queryParams.get('lastname');
 
   const webmiiLink = `https://webmii.com/people?n=%22${firstName}%20${lastName}%22#gsc.tab=0&gsc.q=%22${firstName}%20${lastName}%22&gsc.sort=date`;
+  const instantUsernameLink = lastName 
+    ? `https://instantusername.com/?q=${firstName}${lastName}` 
+    : `https://instantusername.com/?q=${firstName}`;
+
+
+
+    const handleDownloadPDF = () => {
+      const pdf = new jsPDF('p', 'mm', 'a4');
+    
+      // Define initial y offsets
+      let yOffset = 15; // Starting y offset for content
+    
+      // Title
+      pdf.setFontSize(18);
+      pdf.setFont('helvetica', 'bold');
+      pdf.text('USERNAME RESULTS', 105, yOffset, { align: 'center' });
+      yOffset += 20;
+    
+      pdf.setFontSize(14);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text(`Username: ${firstName} ${lastName}`, 20, yOffset);
+    yOffset += 20;
+      // Function to add link text with wrapping and blue color
+      const addLinkText = (text, x, y) => {
+        const pageWidth = 190; // Width of the page minus margins
+        const margin = 20;
+        const maxWidth = pageWidth - 2 * margin;
+        const splitText = pdf.splitTextToSize(text, maxWidth);
+        
+        pdf.setTextColor(0, 0, 255); // Set text color to blue
+        splitText.forEach((line, index) => {
+          if (y > 280) { // Check if y exceeds page height, add new page if needed
+            pdf.addPage();
+            y = 15; // Reset y offset for new page
+          }
+          pdf.text(line, x, y + (index * 10));
+        });
+        pdf.setTextColor(0, 0, 0); // Reset text color to black
+        return y + (splitText.length * 10); // Return the new y offset after adding text
+      };
+    
+      // Owner Information
+      pdf.setFontSize(16);
+      pdf.setFont('helvetica', 'bold');
+      pdf.text('Webmii', 105, yOffset, { align: 'center' });
+      yOffset += 10;
+      pdf.setFontSize(12);
+      pdf.setFont('helvetica', 'normal');
+      yOffset = addLinkText(` ${webmiiLink}`, 20, yOffset);
+      yOffset += 15; // Add extra space after section
+    
+      pdf.setFontSize(16);
+      pdf.setFont('helvetica', 'bold');
+      pdf.text('InstantUsername', 105, yOffset, { align: 'center' });
+      yOffset += 10;
+      pdf.setFontSize(12);
+      pdf.setFont('helvetica', 'normal');
+      yOffset = addLinkText(` ${instantUsernameLink}`, 20, yOffset);
+      yOffset += 15; // Add extra space after section
+    
+      // Save the PDF
+      pdf.save('username_results.pdf');
+    };
+    
+    
+  
 
   return (
     <div className="d-flex">
@@ -58,7 +125,7 @@ const UsernameResults = () => {
               font-weight: bold;
             }
             .info-section {
-              background-color: #aaaaaa; /* Slightly grey background for the box */
+              background-color: #f0f0f0; /* Slightly grey background for the box */
               padding: 15px;
               border-radius: 5px;
               margin-bottom: 20px;
@@ -77,6 +144,7 @@ const UsernameResults = () => {
             .info-section li {
               margin-bottom: 10px;
             }
+
             .fixed-buttons {
               position: fixed;
               bottom: 20px;
@@ -101,6 +169,7 @@ const UsernameResults = () => {
               height: 100%;
               object-fit: cover;
             }
+            
           `}
         </style>
         <div>
@@ -112,7 +181,7 @@ const UsernameResults = () => {
           <ul className="nav flex-column mb-auto">
             <li className="nav-item">
               <Link className="nav-link active text-white" to="/">
-                Home
+                Search New
               </Link>
             </li>
             <li>
@@ -188,21 +257,50 @@ const UsernameResults = () => {
         </nav>
 
         {/* Main content sections */}
-        <div className="container py-5">
-          <div className="bg-light rounded shadow-sm p-4">
-            <h1 className="mb-4" style={{ backgroundColor: '#6c757d', color: 'white', padding: '15px', borderRadius: '5px' }}>
-              Username Search Results
-            </h1>
-            <p className="mb-4">
-              Results for: <strong>{firstName} {lastName}</strong>
-            </p>
-            <a href={webmiiLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+        <div className="container ">
+          <div className="info-section">
+            <h2>Webmii</h2>
+            <a href={webmiiLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary mb-3">
               View results on Webmii
+            </a>
+          </div>
+          <div className="info-section">
+            <h2>Instant Username</h2>
+            <a href={instantUsernameLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              View results on Instant Username
             </a>
           </div>
         </div>
 
-        {/* Fixed Buttons */}
+        <div style={{
+        position: 'fixed',
+        bottom: '20px',
+        right: '20px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        zIndex: '1000',
+      }}>
+        
+        <button onClick={handleDownloadPDF} style={{ textDecoration: 'none', color: 'inherit', background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}>
+          <div style={{
+            backgroundColor: '#007bff', // Blue background color
+            width: '50px',
+            height: '50px',
+            borderRadius: '50%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+            cursor: 'pointer',
+          }}>
+            <img src={downloadButtonImg} alt="Download" style={{
+              width: '70%',
+              height: '70%',
+            }} />
+          </div>
+        </button>
+      </div>
         
       </div>
     </div>
