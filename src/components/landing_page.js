@@ -98,7 +98,7 @@ const LandingPage = () => {
           </div>
           <ul className="nav flex-column mb-auto">
             <li className="nav-item">
-              <Link className="nav-link active text-white" to="/">
+              <Link className="nav-link active text-white" to="/search">
                 <svg className="bi pe-none me-2" width="16" height="16">
                   <use xlinkHref="#search-new"></use>
                 </svg>
@@ -150,29 +150,10 @@ const LandingPage = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
+                
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Features
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Pricing
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    FAQs
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    About
+                  <a className="nav-link" href="/">
+                    Logout
                   </a>
                 </li>
               </ul>
