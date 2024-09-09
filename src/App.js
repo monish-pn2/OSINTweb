@@ -14,6 +14,7 @@ import Login from './components/Login';
 import Signup from './components/SignUp';
 import Home from './components/Home';
 import ForgotPassword from './components/ForgotPassword';
+import Sample from './components/sample';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/sample" element={<Sample />} />
         </Routes>
       </div>
     </Router>
